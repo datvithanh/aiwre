@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US" class="js svg background-fixed gr__people_sutd_edu_sg">
+
+<head>
+    <title>Resilient Water Systems Group – Dealing with complexity in water resources management</title>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+    <link rel="dns-prefetch" href="https://s.w.org/">
+    <link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+
+    <script src="{% static 'wp-emoji-release.min.js'%}"
+        type="text/javascript" defer=""></script>
+    <link rel="stylesheet" id="ilist-embed-form-css-css" href="{% static 'embed-form.css' %}"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="twentyseventeen-fonts-css" href="{% static 'css' %}"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="twentyseventeen-style-css" href="{% static 'style.css' %}"
+        type="text/css" media="all">
+</head>
+
+<body class="home page-template-default page page-id-63 twentyseventeen-front-page has-header-image page-two-column colors-light"
+    data-gr-c-s-loaded="true">
+    <div id="page" class="site">
+        <header id="masthead" class="site-header" role="banner">
+
+            <div class="custom-header">
+
+                <div class="custom-header-media">
+                    <div id="wp-custom-header" class="wp-custom-header"><img src="{% static 'cropped-Po_Valley_Italy_BW.jpg' %}"
+                            width="2000" height="1200" alt="Resilient Water Systems Group" srcset="https://people.sutd.edu.sg/~stefano_galelli/wp-content/uploads/2017/04/cropped-Po_Valley_Italy_BW.jpg 2000w, https://people.sutd.edu.sg/~stefano_galelli/wp-content/uploads/2017/04/cropped-Po_Valley_Italy_BW-300x180.jpg 300w, https://people.sutd.edu.sg/~stefano_galelli/wp-content/uploads/2017/04/cropped-Po_Valley_Italy_BW-768x461.jpg 768w, https://people.sutd.edu.sg/~stefano_galelli/wp-content/uploads/2017/04/cropped-Po_Valley_Italy_BW-1024x614.jpg 1024w"
+                            sizes="100vw"></div>
+                </div>
+
+                <div class="site-branding" style="margin-bottom: 72px;">
+                    <div class="wrap">
+
+
+                        <div class="site-branding-text">
+                            <h1 class="site-title"><a href="{% url 'index' %}" rel="home">AIWRE</a></h1>
+
+                            <p class="site-description">Artificial Intelligence and Water Resources Engineering</p>
+                        </div><!-- .site-branding-text -->
+
+
+                    </div><!-- .wrap -->
+                </div><!-- .site-branding -->
+
+            </div><!-- .custom-header -->
+
+            <div class="navigation-top">
+                <div class="wrap">
+                    <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Top Menu">
+                        <button class="menu-toggle" aria-controls="top-menu" aria-expanded="false"><svg class="icon icon-bars"
+                                aria-hidden="true" role="img">
+                                <use href="#icon-bars" xlink:href="#icon-bars"></use>
+                            </svg><svg class="icon icon-close" aria-hidden="true" role="img">
+                                <use href="#icon-close" xlink:href="#icon-close"></use>
+                            </svg>Menu</button>
+                        <div class="menu-menu-container">
+                            <ul id="top-menu" class="menu">
+                                <li id="menu-item-76" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-76"><a
+                                        href="{% url 'index' %}">Home</a></li>
+                                <li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a
+                                        href="{% url 'missions' %}">Our missions</a></li>
+                                <li id="menu-item-348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-348"><a
+                                        href="{% url 'members' %}">Members</a>
+                                </li>
+                                <li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-108"><a
+                                        href="{% url 'activities' %}">Activities</a>
+                                </li>
+                                <li id="menu-item-300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-300"><a
+                                        href="{% url 'projects' %}">Projects</a></li>
+                                <li id="menu-item-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109"><a
+                                        href="{% url 'research-cooperation' %}">Research cooperation</a></li>
+                                <li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a
+                                        href="{% url 'contacts' %}">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <a href="https://people.sutd.edu.sg/~stefano_galelli/#content" class="menu-scroll-down"><svg
+                                class="icon icon-arrow-right" aria-hidden="true" role="img">
+                                <use href="#icon-arrow-right" xlink:href="#icon-arrow-right"></use>
+                            </svg><span class="screen-reader-text">Scroll down to content</span></a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="site-content-contain">
+            <div id="content" class="site-content">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <footer id="colophon" class="site-footer" role="contentinfo">
+                <div class="wrap">
+                    <aside class="widget-area" role="complementary">
+                        <div class="widget-column footer-widget-1">
+                            <section id="text-8" class="widget widget_text">
+                                <h2 class="widget-title">Find Us</h2>
+                                <div class="textwidget">
+                                    <p><strong>Address</strong>
+                                        <br>Vietnamese - German University
+                                        <br>Binh Duong Campus
+                                        <br>Le Lai Street, Hoa Phu Ward, Thu Dau Mot City, Binh Duong Province
+                                        <br> (0274) 222 0990 - (0274) 222 0980
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
+                    </aside>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

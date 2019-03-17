@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+            <article id="post-63" class="twentyseventeen-panel  post-63 page type-page status-publish hentry">
+                <div class="panel-content">
+                    <div class="wrap">
+                        <header class="entry-header">
+                            <h2 class="entry-title">Our missions</h2>
+                        </header>
+                        <div class="entry-content">
+                            {% for mission in missions %}
+                                <p>{{ mission.id }}.{{ mission.content }} </p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+{% endblock %}
