@@ -19,4 +19,4 @@ class MemberAdmin(admin.ModelAdmin):
 admin.site.register(Member, MemberAdmin)
 admin.site.register(Project)
 admin.site.register(ResearchCooperation)
-admin.site.register(ReseachActivity)
+admin.site.register(ResearchActivity)

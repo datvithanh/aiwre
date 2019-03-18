@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import ProfessionalExperience, Mission
+from .models import *
 
 def index(request):
     return render(request, 'index.html')
@@ -9,16 +9,20 @@ def missions(request):
     return render(request, 'missions.html', {'missions': missions})
 
 def members(request):
-    pass
+    members = Member.objects.all()
+    return render(request, 'members.html', {'members': members})
 
 def activities(request):
-    pass
+    ras = ResearchActivity.objects.all()
+    return render(request, 'research_activities.html', {'ras': ras})
 
 def projects(request):
-    pass
+    projects = Project.objects.all()
+    return render(request, 'projects.html', {'projects': projects})
 
 def researchCooperation(request):
-    pass
+    rcs = ResearchCooperation.objects.all()
+    return render(request, 'research_coopereations.html', {'rcs': rcs})
 
 def contacts(request):
     pass
