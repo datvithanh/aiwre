@@ -25,7 +25,7 @@ SECRET_KEY = 'mlb#(eedutda6=edim-0$#we4qz#ramljgd62b!j3c-&ei+!dw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
