@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+#
 class Member(models.Model):
     name = models.CharField(max_length=255)
     address = models.CharField(max_length=255)
@@ -21,16 +21,20 @@ class Publication(models.Model):
     member = models.ForeignKey(Member, on_delete=models.CASCADE)
     content = models.CharField(max_length=255)
 
+#
 class ResearchActivity(models.Model):
     name = models.CharField(max_length=255)
     description = models.CharField(max_length=255, null=True)
 
+#
 class Project(models.Model):
     name = models.CharField(max_length=255)
     description = models.CharField(max_length=255, null=True)
 
+#
 class ResearchCooperation(models.Model):
     content = models.CharField(max_length=255)
 
+#
 class Mission(models.Model):
     content = models.CharField(max_length=255)
