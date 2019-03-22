@@ -33,7 +33,7 @@ class Project(models.Model):
 
 #
 class ResearchCooperation(models.Model):
-    content = models.CharField(max_length=255)
+    content = models.CharField(max_length=1023)
 
 #
 class Mission(models.Model):
