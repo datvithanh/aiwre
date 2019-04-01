@@ -26,9 +26,11 @@ class ProfessionalExperience(models.Model):
 
 class Publication(models.Model):
     member = models.ForeignKey(Member, on_delete=models.CASCADE)
-    content = models.CharField(max_length=511)
-    name = models.CharField(max_length=511, default='')
-
+    article = models.CharField(max_length=511)
+    authors = models.CharField(max_length=511, default='', null=True)
+    name = models.CharField(max_length=511, default='', null=True)
+    journal = models.CharField(max_length=511, default='', null=True)
+    link = models.CharField(max_length=511, default='', null=True)
 #
 class ResearchActivity(models.Model):
     name = models.CharField(max_length=511)
