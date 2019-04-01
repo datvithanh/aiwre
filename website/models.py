@@ -9,6 +9,7 @@ class Member(models.Model):
     phone = models.CharField(max_length=511)
     avatar = models.CharField(max_length=511, null=True)
     research_interest = models.CharField(max_length=511)
+    summary = models.CharField(max_length=1023, default='')
 
 class Education(models.Model):
     member = models.ForeignKey(Member, on_delete=models.CASCADE)
