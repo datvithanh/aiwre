@@ -9,7 +9,7 @@ def missions(request):
     return render(request, 'missions.html', {'missions': missions})
 
 def members(request):
-    members = Member.objects.all()
+    members = Member.objects.all().order_by('order')
     return render(request, 'members.html', {'members': members})
 
 def activities(request):

@@ -14,6 +14,9 @@ class PublicationInline(admin.StackedInline):
     extra = 1
 
 class MemberAdmin(admin.ModelAdmin):
+    list_display = ['name', 'order']
+    list_editable = ['order']
+    list_display_links = ['name']
     inlines = [EducationInline, ProfessionalExperience, PublicationInline]
 
 admin.site.register(Member, MemberAdmin)

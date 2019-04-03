@@ -3,6 +3,8 @@ from django.db import models
 
 #
 class Member(models.Model):
+    def __str__(self):
+        return self.name
     name = models.CharField(max_length=511)
     address = models.CharField(max_length=511)
     email = models.CharField(max_length=511)
@@ -10,6 +12,7 @@ class Member(models.Model):
     avatar = models.CharField(max_length=511, null=True)
     research_interest = models.CharField(max_length=511)
     summary = models.CharField(max_length=1023, default='')
+    order = models.IntegerField(default=0)
 
 class Education(models.Model):
     member = models.ForeignKey(Member, on_delete=models.CASCADE)
