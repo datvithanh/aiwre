@@ -11,7 +11,12 @@
                         <div class="entry-content">
                             {% for member in members %}
                                 <p>
-                                    <a href="">{{ member.name }} </a>
+                                    {{ member.name }}<br />
+{#                                    &gt; PhD, Politecnico di Milano<br />#}
+{#                                    &gt; Office: Building 1, Level 7<br />#}
+                                    &gt; Phone: {{ member.phone }}<br />
+                                    &gt; Email: {{ member.email }}<br />
+{#                                    &gt; <a href="https://esd.sutd.edu.sg/people/faculty/stefano-galelli">Homepage</a> | <a href="https://www.researchgate.net/profile/Stefano_Galelli">ResearchGate</a> | <a href="https://scholar.google.it/citations?user=q6nzpZwAAAAJ&amp;hl=it&amp;oi=ao">Google scholar</a> | <a href="https://github.com/stefano-galelli">GitHub</a>#}
                                 </p>
                             {% endfor %}
                         </div>
