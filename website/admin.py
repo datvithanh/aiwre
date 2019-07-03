@@ -19,6 +19,10 @@ class MemberAdmin(admin.ModelAdmin):
     list_display_links = ['name']
     inlines = [EducationInline, ProfessionalExperience, PublicationInline]
 
+class Project(admin.ModelAdmin):
+    list_display = ['name']
+    inlines = [ProjectObjective]
+
 admin.site.register(Member, MemberAdmin)
 admin.site.register(Project)
 admin.site.register(ResearchCooperation)
