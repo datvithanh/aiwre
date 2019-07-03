@@ -10,7 +10,10 @@
                         </header>
                         <div class="entry-content">
                             {% for project in projects %}
-                                <p>{{ project.name }}</p>
+                                <p><b>{{project.name}}</b>: {{project.description}}</p>
+                                {% for obj in project.project_objectives.all%}
+                                {{obj.description}}
+                                {% endfor %}
                             {% endfor %}
                         </div>
                     </div>
