@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
@@ -10,14 +11,24 @@
                         </header>
                         <div class="entry-content">
                             {% for member in members %}
-                                <p>
-                                    {{ member.name }}<br />
-{#                                    &gt; PhD, Politecnico di Milano<br />#}
-{#                                    &gt; Office: Building 1, Level 7<br />#}
+                                <p style="margin-bottom: 0.5em">
+                                    <a href="{% static member.curriculum_vitae_link %}">{{ member.name }} </a><br />
                                     &gt; Phone: {{ member.phone }}<br />
                                     &gt; Email: {{ member.email }}<br />
-{#                                    &gt; <a href="https://esd.sutd.edu.sg/people/faculty/stefano-galelli">Homepage</a> | <a href="https://www.researchgate.net/profile/Stefano_Galelli">ResearchGate</a> | <a href="https://scholar.google.it/citations?user=q6nzpZwAAAAJ&amp;hl=it&amp;oi=ao">Google scholar</a> | <a href="https://github.com/stefano-galelli">GitHub</a>#}
-                                </p>
+                                    <div>
+                                        <a href="{{ member.google_scholar_link }}">
+                                            <img src="{% static 'img/icon/google-scholar.png'%}" width="4%" height="4%">
+                                        </a>
+                                        &nbsp;
+                                        <a href="{{ member.researchgate_link }}">
+                                            <img src="{% static 'img/icon/researchgate.png'%}" width="4%" height="4%">
+                                        </a>
+                                        &nbsp;
+                                        <a href="{{ member.linkedin_link }}">
+                                            <img src="{% static 'img/icon/linkedin.png'%}" width="4%" height="4%">
+                                        </a>
+                                    </div>
+                                </p>                                
                             {% endfor %}
                         </div>
                     </div>

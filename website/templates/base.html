@@ -7,16 +7,11 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
     <link rel="dns-prefetch" href="https://s.w.org/">
     <link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
-
-    <script src="{% static 'wp-emoji-release.min.js'%}"
-        type="text/javascript" defer=""></script>
-    <link rel="stylesheet" id="ilist-embed-form-css-css" href="{% static 'embed-form.css' %}"
+    <link rel="stylesheet" id="ilist-embed-form-css-css" href="{% static 'css/embed-form.css' %}"
         type="text/css" media="all">
-    <link rel="stylesheet" id="twentyseventeen-fonts-css" href="{% static 'css' %}"
+    <link rel="stylesheet" id="twentyseventeen-style-css" href="{% static 'css/style.css' %}"
         type="text/css" media="all">
-    <link rel="stylesheet" id="twentyseventeen-style-css" href="{% static 'style.css' %}"
-        type="text/css" media="all">
-    <link rel="stylesheet" id="twentyseventeen-style-css" href="{% static 'custom.css' %}"
+    <link rel="stylesheet" id="twentyseventeen-style-css" href="{% static 'css/custom.css' %}"
         type="text/css" media="all">
     {% csrf_token %}
 </head>
@@ -24,31 +19,21 @@
 <body class="page-template-default page page-id-2 has-header-image page-two-column colors-light" data-gr-c-s-loaded="true">
     <div id="page" class="site">
         <header id="masthead" class="site-header" role="banner">
-
             <div class="custom-header">
-
                 <div class="custom-header-media">
                     <div id="wp-custom-header" class="wp-custom-header"><img src="{% static 'cropped-Po_Valley_Italy_BW.jpg' %}"
-                            width="2000" height="1200" srcset="https://people.sutd.edu.sg/~stefano_galelli/wp-content/uploads/2017/04/cropped-Po_Valley_Italy_BW.jpg 2000w, https://people.sutd.edu.sg/~stefano_galelli/wp-content/uploads/2017/04/cropped-Po_Valley_Italy_BW-300x180.jpg 300w, https://people.sutd.edu.sg/~stefano_galelli/wp-content/uploads/2017/04/cropped-Po_Valley_Italy_BW-768x461.jpg 768w, https://people.sutd.edu.sg/~stefano_galelli/wp-content/uploads/2017/04/cropped-Po_Valley_Italy_BW-1024x614.jpg 1024w"
+                            width="2000" height="1200" srcset="{% static 'img/vietnam-mekong-delta.jpg' %} 2000w, {% static 'img/vietnam-mekong-delta.jpg' %} 300w, {% static 'img/vietnam-mekong-delta.jpg' %} 768w, {% static 'img/vietnam-mekong-delta.jpg' %} 1024w"
                             sizes="100vw"></div>
                 </div>
-
                 <div class="site-branding" style="margin-bottom: 72px;">
                     <div class="wrap">
-
-
                         <div class="site-branding-text">
                             <h1 class="site-title"><a href="{% url 'index' %}" rel="home">AIWRE</a></h1>
-
                             <p class="site-description">Artificial Intelligence and Water Resources Engineering</p>
-                        </div><!-- .site-branding-text -->
-
-
-                    </div><!-- .wrap -->
-                </div><!-- .site-branding -->
-
-            </div><!-- .custom-header -->
-
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="navigation-top">
                 <div class="wrap">
                     <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Top Menu">

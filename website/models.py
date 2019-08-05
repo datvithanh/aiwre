@@ -14,6 +14,11 @@ class Member(models.Model):
     summary = models.CharField(max_length=1023, default='')
     order = models.IntegerField(default=0)
 
+    curriculum_vitae_link = models.CharField(max_length=511, null=True)
+    google_scholar_link = models.CharField(max_length=511, null=True)
+    researchgate_link = models.CharField(max_length=511, null=True)
+    linkedin_link = models.CharField(max_length=511, null=True)
+
 class Education(models.Model):
     member = models.ForeignKey(Member, on_delete=models.CASCADE)
     college = models.CharField(max_length=511)
