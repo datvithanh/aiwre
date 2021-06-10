@@ -7,7 +7,7 @@ cffi==1.12.2
 chardet==3.0.4
 Click==7.0
 cryptography==2.6.1
-Django==2.1.7
+Django==2.2.24
 django-cors-headers==2.5.0
 django-modelcluster==4.3
 django-taggit==0.23.0
